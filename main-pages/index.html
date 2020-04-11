@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../images/logo.png" alt="">
+            <span class="menu-buttons">
+                <span>
+                    <a href="../main-pages/index.html">Главная</a>
+                </span>
+                <span>
+                    <a href="../main-pages/Contacts.html">Контакты</a>
+                </span>
+                <span>
+                    <a href="../main-pages/catalog.html">Каталог</a>
+                </span>
+                <span>
+                    <a href="../main-pages/signup.html">Регистрация</a>
+                </span>
+            </span>
+            <div class="open-menu-but">
+                <a href="#" class="menu-but">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb2%2FHamburger_icon.svg%2F1200px-Hamburger_icon.svg.png&f=1&nofb=1">
+                </a>
+            </div>
+        </div>
+        
+        <!--Content-->
+        <div class="menu-container">
+            <div class ="menu-right">
+                <span>
+                    menu<br>
+                </span>
+                <span>
+                    <a href="../main-pages/index.html">Главная</a><br>
+                </span>
+                <span>
+                    <a href="../main-pages/Contacts.html">Контакты</a><br>
+                </span>
+                <span>
+                    <a href="../main-pages/catalog.html">Каталог</a><br>
+                </span>
+                <span>
+                    <a href="../main-pages/signup.html">Регистрация</a><br>
+                </span>
+            </div>
+        </div>
+    </header>
+    <script>
+        $('.menu-but').on('click',function(){
+            $('.menu-right').toggleClass('open-menu');
+        });
+    </script>
+
+    
+    <div class="content">
+            <p>
+                Вас приветствует самый выгоднй онлайн магазин техники Soup.ru.<br>
+                Сдесь вы найдете технику на любой вкус и по доступной цене.<br>
+                Преходи в <a href="../main-pages/catalog.html">каталог</a> и подбери товар для себя!<br>
+            </p>
+            <p>
+                Я адаптивный, сожми меня и увидишь;)
+            </p>
+            <div>
+                <img src="../images/devices.png" alt="devices">
+            </div>
+            <h4>Расположение</h4>
+            <p>Shkol'naya Ulitsa, 4, Zheleznodorozhny, Moscow Oblast, 143986 <br></p>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d561.4221303239899!2d38.016352929218925!3d55.74654075363183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ac92e65e288f5%3A0xf940d4be28a05966!2sFelis!5e0!3m2!1sen!2sru!4v1585931466820!5m2!1sen!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>  
+    </div>
+    
+
+    <!--footer-->
+    <footer>
+        <h4> &copy; Все права защищены</h4>
+    </footer>    
+</body>
+</html>

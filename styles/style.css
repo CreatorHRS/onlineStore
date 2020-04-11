@@ -1,0 +1,293 @@
+h1{
+    color: #9c9c9c;
+}
+
+h2{
+    text-align: center;
+    ;
+}
+
+a{
+    text-decoration: none;
+    color: #00b6ba;
+}
+
+header > div > img{
+    margin-top: 20px;
+    
+    height: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    /*float: left;*/
+}
+header > div > span > span{
+    font-size: 20px;
+    
+    display: inline;
+    color: #7c7c7c;
+
+   
+    
+}
+header > div > span > span > a:hover{
+    color: #ce4040;
+} 
+header > div > span{
+    float: right;
+}
+
+.map{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+input[type="mail"]:focus{
+    
+    color: rgb(218, 129, 129);
+}
+.tab-prop {
+    width: 100%;
+    height: 100px;
+}
+.tab-prop  th, td{
+    outline: 1px black solid;
+    text-align: center;
+}
+
+.seo img{
+    float: left;
+    margin: 4px 7px 4px 7px;
+    width: 250px;
+}
+.seo{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+p{
+    font-weight: 400; 
+    color: #484343; 
+}
+p::first-letter{
+    color: #00b6ba;
+    font-size: 25px;
+}
+h4{
+    text-align: center;
+}
+body{
+    font-family: sans-serif;
+    background-color: #f6f6f6;
+    
+}
+
+.item_image{
+    height: 400px;
+    padding: 2px;
+    background-color: #000000;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #eaeaea;
+}
+.short{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.full{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    
+
+}
+.prop{
+    padding: 20px;
+    color: #ce4040;
+    font-weight: 600;
+
+}
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 80%; 
+}
+
+.image-cropper img{
+    display: block;
+    height: auto;
+    width: 130%; 
+    margin: 0 0 0 -30%;
+    
+     
+}
+
+.catalog li:nth-child(2) span:after{
+    content: " HOT";
+    color: #ce4040;
+    font-weight: 400;
+
+}
+.catalog li:nth-child(2) span:hover:after{
+    
+    color: #ffad6b;
+    font-weight: 600;
+    
+
+}
+.content{
+    /* padding-top: 10%; */
+    max-width: 80%;
+    margin: 0 auto;
+    /* border: 1px black solid; */
+    overflow: hidden;
+    position: relative;
+    
+}
+.menu-container{
+    right: 0;
+    position: absolute;
+    height: 420px;
+    width: 220px;
+    overflow: hidden;
+    top: 100px;
+    border: 0;
+    z-index: 100;
+}
+header{
+    width: 100%;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    height: 100px;
+    background-color: #baeaeb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header > div{
+    max-width: 80%;
+    margin: 0 auto;
+    /* border: #000000 1px solid; */
+}
+
+header, footer{
+    width: 100%;
+    padding: 0;
+    box-shadow: black;
+}
+body{
+    margin: 0;
+}
+
+
+
+.catalog{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    list-style-type: none;
+    margin: 0 auto;
+    width: 25%;
+    height: 40%;
+    /* border: #000000 1px solid; */
+    padding: 20px;
+    border: 1px black solid;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    
+    
+}
+.item img{
+    max-width: 90%;
+    /* outline: #000000 1px solid; */
+}
+.item img:hover{
+    outline: 1px black solid;
+}
+.item ul{
+    text-align: left;
+    
+}
+.item ul li{
+    font-weight: 500;
+}
+.menu-buttons{
+    margin: 20px;
+    margin-left: 0;
+    display: inline;
+    flex-wrap: nowrap;
+}
+div[class="open-menu-but"]{
+    float: right;
+    display: none;
+}
+div[class="open-menu-but"] img{
+    height: 50px;
+}
+
+@media (max-width:714px){
+    .menu-buttons{
+        /* visibility: hidden; */
+        display: none;
+    }
+    div[class="open-menu-but"]{
+        display: inline;
+    }
+    .content, header > div, footer{
+        max-width: 100%;
+    }
+}
+
+@media (min-width:714px){
+    .menu-right{
+        visibility: hidden;
+    }
+}
+
+@media (max-width:415px){
+    .content ul{
+        flex-direction: column;
+    }
+    .item{
+        width: 80%;
+    }
+}
+
+.menu-right{
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    display: block;
+    background-color: #baeaeb;
+    right: -210px;
+    top: 0;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.menu-right span{
+    margin-top:20px;
+    margin-left: 10px;
+    font-size: 25px;
+    display: block;
+}
+.open-menu{
+    right: 0;
+    /* transition: 0.5s; */
+
+}
+
+img[alt="devices"]{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}

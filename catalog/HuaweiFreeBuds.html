@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi Readmi Note 8</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../images/logo.png" alt="">
+            <span class="menu-buttons">
+                <span>
+                    <a href="../main-pages/index.html">Главная</a>
+                </span>
+                <span>
+                    <a href="../main-pages/Contacts.html">Контакты</a>
+                </span>
+                <span>
+                    <a href="../main-pages/catalog.html">Каталог</a>
+                </span>
+                <span>
+                    <a href="../main-pages/signup.html">Регистрация</a>
+                </span>
+            </span>
+            <div class="open-menu-but">
+                <a href="#" class="menu-but">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb2%2FHamburger_icon.svg%2F1200px-Hamburger_icon.svg.png&f=1&nofb=1">
+                </a>
+            </div>
+        </div>
+        
+        <!--Content-->
+        <div class="menu-container">
+            <div class ="menu-right">
+                <span>
+                    menu<br>
+                </span>
+                <span>
+                    <a href="../main-pages/index.html">Главная</a><br>
+                </span>
+                <span>
+                    <a href="../main-pages/Contacts.html">Контакты</a><br>
+                </span>
+                <span>
+                    <a href="../main-pages/catalog.html">Каталог</a><br>
+                </span>
+                <span>
+                    <a href="../main-pages/signup.html">Регистрация</a><br>
+                </span>
+            </div>
+        </div>
+    </header>
+    <script>
+        $('.menu-but').on('click',function(){
+            $('.menu-right').toggleClass('open-menu');
+        });
+    </script>
+    <div class="content">
+        <a href="https://avatars.mds.yandex.net/get-mpic/1644362/img_id3152606860208543969.jpeg/orig" target="_blank">
+            <img class="item_image"src="https://avatars.mds.yandex.net/get-mpic/1644362/img_id3152606860208543969.jpeg/orig" alt="">
+        </a>
+        <hr>
+        <h3 >Коротко о товаре</h3>
+        <p class="short">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        </p>
+        <h3>Список характеристик</h3>
+        <ul class="prop">
+            <li>смартфон с Android 9.0</li>
+            <li>поддержка двух SIM-карт</li>
+            <li>экран 6.3", разрешение 2340x1080</li>
+            <li>четыре камеры 48 МП/8 МП/2 МП/2 МП, автофокус</li>
+            <li>память 64 ГБ, слот для карты памяти</li>
+            <li>3G, 4G LTE, Wi-Fi, Bluetooth</li>
+            <li>объем оперативной памяти 4 ГБ</li>
+            <li>аккумулятор 4000 мА⋅ч</li>
+            <li>вес 190 г, ШxВxТ 75.30x158.30x8.35 мм</li>
+    
+        </ul>
+        <table class="tab-prop">
+            <tr>
+              <th>ОС</th>
+              <th>Вес</th>
+              <th>Аккумулятор</th>
+              <th>Интерфейсы</th>
+            </tr>
+            <tr>
+              <td>Android</td>
+              <td>Smith</td>
+              <td>4000</td>
+              <td>3G, 4G LTE, Wi-Fi, Bluetooth</td>
+            </tr>
+           
+          </table> 
+        <h3>Подробно о товаре</h3>
+        <p class="full">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aut iure molestias repudiandae quaerat labore
+            dolore commodi explicabo tenetur reiciendis eaque quos, nostrum fugiat rem dolorum perferendis accusamus
+            voluptate velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem unde similique eveniet ad 
+            porro est nesciunt sed illum et commodi. Totam, officiis. Harum suscipit rerum temporibus excepturi rem, cum 
+            repellat.
+        </p>
+        <p>Данные взяты с ресурса 
+            <a href="https://market.yandex.ru/product--smartfon-xiaomi-redmi-note-8-4-64gb/590361001">яндекс маркет</a>
+        </p>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <h4> &copy; Все права защищены</h4>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div>
+            <img src="../images/logo.png" alt="">
+            <span class="menu-buttons">
+                <span>
+                    <a href="../main-pages/index.html">Главная</a>
+                </span>
+                <span>
+                    <a href="../main-pages/Contacts.html">Контакты</a>
+                </span>
+                <span>
+                    <a href="../main-pages/catalog.html">Каталог</a>
+                </span>
+                <span>
+                    <a href="../main-pages/signup.html">Регистрация</a>
+                </span>
+            </span>
+            <div class="open-menu-but">
+                <a href="#" class="menu-but">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb2%2FHamburger_icon.svg%2F1200px-Hamburger_icon.svg.png&f=1&nofb=1">
+                </a>
+            </div>
+        </div>
+        
+        <!--Content-->
+        <div class="menu-container">
+            <div class ="menu-right">
+                <span>
+                    menu<br>
+                </span>
+                <span>
+                    <a href="../main-pages/index.html">Главная</a><br>
+                </span>
+                <span>
+                    <a href="../main-pages/Contacts.html">Контакты</a><br>
+                </span>
+                <span>
+                    <a href="../main-pages/catalog.html">Каталог</a><br>
+                </span>
+                <span>
+                    <a href="../main-pages/signup.html">Регистрация</a><br>
+                </span>
+            </div>
+        </div>
+    </header>
+    <script>
+        $('.menu-but').on('click',function(){
+            $('.menu-right').toggleClass('open-menu');
+        });
+    </script>
+
+    <!--Contenr-->
+    <div class="content">
+        <form action="#">
+            Имя <input type="text" placeholder="Введите имя"><br>
+            Пароль <input type="passworld" placeholder="Введите пароль"><br>
+            Пол<br>
+            М <input type="radio" name="pol"> Ж <input type="radio" name="pol"><br>
+            Увлечения<br>
+            <input type="checkbox"> Спорт <br>
+            <input type="checkbox"> Самообраование <br>
+            <input type="checkbox"> Кино <br>
+            <input type="checkbox"> Музыка <br>
+            <input type="submit"> <input type="reset">
+        </form>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <h4> &copy; Все права защищены</h4>
+    </footer>
+</body>
+
+</html>
